@@ -1,0 +1,4 @@
+date: 2017-05-03
+download_url: https://github.com/corkami/pocs/archive/2c1f5eb5691b945a2af9b7ee367e53d9819e8c0f.zip
+notes: the pocs subdir contains the prebuilt PE only from the URL above.
+ The subset of PEs that pefile cannot parse have been moved out of the way in the failing directory

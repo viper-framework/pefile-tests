@@ -1,0 +1,172 @@
+----------Parsing Warnings----------
+
+Byte 0x00 makes up 65.3646% of the file's contents. This may indicate truncation / malformation.
+
+Suspicious flags set for section 0. Both IMAGE_SCN_MEM_WRITE and IMAGE_SCN_MEM_EXECUTE are set. This might indicate a packed executable.
+
+----------DOS_HEADER----------
+
+[IMAGE_DOS_HEADER]
+0x0        0x0   e_magic:                       0x5A4D    
+0x2        0x2   e_cblp:                        0x0       
+0x4        0x4   e_cp:                          0x0       
+0x6        0x6   e_crlc:                        0x0       
+0x8        0x8   e_cparhdr:                     0x0       
+0xA        0xA   e_minalloc:                    0x0       
+0xC        0xC   e_maxalloc:                    0x0       
+0xE        0xE   e_ss:                          0x0       
+0x10       0x10  e_sp:                          0x0       
+0x12       0x12  e_csum:                        0x0       
+0x14       0x14  e_ip:                          0x0       
+0x16       0x16  e_cs:                          0x0       
+0x18       0x18  e_lfarlc:                      0x0       
+0x1A       0x1A  e_ovno:                        0x0       
+0x1C       0x1C  e_res:                         
+0x24       0x24  e_oemid:                       0x0       
+0x26       0x26  e_oeminfo:                     0x0       
+0x28       0x28  e_res2:                        
+0x3C       0x3C  e_lfanew:                      0x40      
+
+----------NT_HEADERS----------
+
+[IMAGE_NT_HEADERS]
+0x40       0x0   Signature:                     0x4550    
+
+----------FILE_HEADER----------
+
+[IMAGE_FILE_HEADER]
+0x44       0x0   Machine:                       0x14C     
+0x46       0x2   NumberOfSections:              0x1       
+0x48       0x4   TimeDateStamp:                 0x0        [Thu Jan  1 00:00:00 1970 UTC]
+0x4C       0x8   PointerToSymbolTable:          0x0       
+0x50       0xC   NumberOfSymbols:               0x0       
+0x54       0x10  SizeOfOptionalHeader:          0xE0      
+0x56       0x12  Characteristics:               0x102     
+Flags: IMAGE_FILE_32BIT_MACHINE, IMAGE_FILE_EXECUTABLE_IMAGE
+
+----------OPTIONAL_HEADER----------
+
+[IMAGE_OPTIONAL_HEADER]
+0x58       0x0   Magic:                         0x10B     
+0x5A       0x2   MajorLinkerVersion:            0x0       
+0x5B       0x3   MinorLinkerVersion:            0x0       
+0x5C       0x4   SizeOfCode:                    0x0       
+0x60       0x8   SizeOfInitializedData:         0x0       
+0x64       0xC   SizeOfUninitializedData:       0x0       
+0x68       0x10  AddressOfEntryPoint:           0x200     
+0x6C       0x14  BaseOfCode:                    0x0       
+0x70       0x18  BaseOfData:                    0x0       
+0x74       0x1C  ImageBase:                     0x400000  
+0x78       0x20  SectionAlignment:              0x200     
+0x7C       0x24  FileAlignment:                 0x200     
+0x80       0x28  MajorOperatingSystemVersion:   0x0       
+0x82       0x2A  MinorOperatingSystemVersion:   0x0       
+0x84       0x2C  MajorImageVersion:             0x0       
+0x86       0x2E  MinorImageVersion:             0x0       
+0x88       0x30  MajorSubsystemVersion:         0x4       
+0x8A       0x32  MinorSubsystemVersion:         0x0       
+0x8C       0x34  Reserved1:                     0x0       
+0x90       0x38  SizeOfImage:                   0x600     
+0x94       0x3C  SizeOfHeaders:                 0x160     
+0x98       0x40  CheckSum:                      0x255C    
+0x9C       0x44  Subsystem:                     0x3       
+0x9E       0x46  DllCharacteristics:            0x0       
+0xA0       0x48  SizeOfStackReserve:            0x0       
+0xA4       0x4C  SizeOfStackCommit:             0x0       
+0xA8       0x50  SizeOfHeapReserve:             0x0       
+0xAC       0x54  SizeOfHeapCommit:              0x0       
+0xB0       0x58  LoaderFlags:                   0x0       
+0xB4       0x5C  NumberOfRvaAndSizes:           0x10      
+DllCharacteristics: 
+
+----------PE Sections----------
+
+[IMAGE_SECTION_HEADER]
+0x138      0x0   Name:                          
+0x140      0x8   Misc:                          0x400     
+0x140      0x8   Misc_PhysicalAddress:          0x400     
+0x140      0x8   Misc_VirtualSize:              0x400     
+0x144      0xC   VirtualAddress:                0x200     
+0x148      0x10  SizeOfRawData:                 0x400     
+0x14C      0x14  PointerToRawData:              0x200     
+0x150      0x18  PointerToRelocations:          0x0       
+0x154      0x1C  PointerToLinenumbers:          0x0       
+0x158      0x20  NumberOfRelocations:           0x0       
+0x15A      0x22  NumberOfLinenumbers:           0x0       
+0x15C      0x24  Characteristics:               0xA0000000
+Flags: IMAGE_SCN_MEM_EXECUTE, IMAGE_SCN_MEM_WRITE
+Entropy: 4.081159 (Min=0.0, Max=8.0)
+MD5     hash: 71787debc5fc1e776cb14ceaad1e3dc1
+SHA-1   hash: dc6fe3cbfec595bf0a454f471d4df205d79c0497
+SHA-256 hash: a47f8b54eb75097c0bc09eb58bfeab2f93c72a5f42614bc1cdd06ae727f49847
+SHA-512 hash: 900eb654bbc4a1458259403bf4bc54bae80c9bf0bbd409e74a2bb97d1d0bef19dd5134554f55de8a53a48485380e9ce94dec67e4b80cb10b1ac2370962a70d21
+
+----------Directories----------
+
+[IMAGE_DIRECTORY_ENTRY_EXPORT]
+0xB8       0x0   VirtualAddress:                0x0       
+0xBC       0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_IMPORT]
+0xC0       0x0   VirtualAddress:                0x0       
+0xC4       0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_RESOURCE]
+0xC8       0x0   VirtualAddress:                0x0       
+0xCC       0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_EXCEPTION]
+0xD0       0x0   VirtualAddress:                0x0       
+0xD4       0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_SECURITY]
+0xD8       0x0   VirtualAddress:                0x0       
+0xDC       0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_BASERELOC]
+0xE0       0x0   VirtualAddress:                0x460     
+0xE4       0x4   Size:                          0x20      
+[IMAGE_DIRECTORY_ENTRY_DEBUG]
+0xE8       0x0   VirtualAddress:                0x0       
+0xEC       0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_COPYRIGHT]
+0xF0       0x0   VirtualAddress:                0x0       
+0xF4       0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_GLOBALPTR]
+0xF8       0x0   VirtualAddress:                0x0       
+0xFC       0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_TLS]
+0x100      0x0   VirtualAddress:                0x0       
+0x104      0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG]
+0x108      0x0   VirtualAddress:                0x0       
+0x10C      0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT]
+0x110      0x0   VirtualAddress:                0x0       
+0x114      0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_IAT]
+0x118      0x0   VirtualAddress:                0x0       
+0x11C      0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT]
+0x120      0x0   VirtualAddress:                0x0       
+0x124      0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR]
+0x128      0x0   VirtualAddress:                0x0       
+0x12C      0x4   Size:                          0x0       
+[IMAGE_DIRECTORY_ENTRY_RESERVED]
+0x130      0x0   VirtualAddress:                0x0       
+0x134      0x4   Size:                          0x0       
+
+----------Base relocations----------
+
+[IMAGE_BASE_RELOCATION]
+0x460      0x0   VirtualAddress:                0x233     
+0x464      0x4   SizeOfBlock:                   0x20      
+    00000234h HIGHLOW
+    000003D1h HIGHLOW
+    000003D7h HIGHLOW
+    000003DDh HIGHLOW
+    000003E6h HIGHLOW
+    000003EFh HIGHLOW
+    000003FBh HIGHLOW
+    0000040Ah HIGHLOW
+    00000422h HIGHLOW
+    0000042Dh HIGHLOW
+    0000043Ah HIGHLOW
+    00000443h HIGHLOW
+

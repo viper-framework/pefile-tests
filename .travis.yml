@@ -1,0 +1,19 @@
+language: python
+
+python:
+    - '2.7'
+    - '3.4'
+    - '3.5'
+    - '3.6'
+    - '3.5-dev'
+    - '3.6-dev'
+
+install:
+    - pip install pytest
+    - git clone git://github.com/viper-framework/pefile.git
+    - pushd pefile
+    - pip install .
+    - popd
+
+script:
+    - pytest -vvs tests
