@@ -1,0 +1,88 @@
+----------Parsing Warnings----------
+
+Byte 0x20 makes up 99.9757% of the file's contents. This may indicate truncation / malformation.
+
+SizeOfHeaders is smaller than AddressOfEntryPoint: this file cannot run under Windows 8.
+
+AddressOfEntryPoint lies outside the sections' boundaries. AddressOfEntryPoint: 0x41
+
+----------DOS_HEADER----------
+
+[IMAGE_DOS_HEADER]
+0x0        0x0   e_magic:                       0x5A4D    
+0x2        0x2   e_cblp:                        0x9090    
+0x4        0x4   e_cp:                          0x9090    
+0x6        0x6   e_crlc:                        0x9090    
+0x8        0x8   e_cparhdr:                     0x9090    
+0xA        0xA   e_minalloc:                    0x9090    
+0xC        0xC   e_maxalloc:                    0x9090    
+0xE        0xE   e_ss:                          0x9090    
+0x10       0x10  e_sp:                          0x9090    
+0x12       0x12  e_csum:                        0x9090    
+0x14       0x14  e_ip:                          0x9090    
+0x16       0x16  e_cs:                          0x9090    
+0x18       0x18  e_lfarlc:                      0x9090    
+0x1A       0x1A  e_ovno:                        0x9090    
+0x1C       0x1C  e_res:                         \x90\x90\x90\x90\x90\x90\x90\x90
+0x24       0x24  e_oemid:                       0x9090    
+0x26       0x26  e_oeminfo:                     0x9090    
+0x28       0x28  e_res2:                        \x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+0x3C       0x3C  e_lfanew:                      0x1010190 
+
+----------NT_HEADERS----------
+
+[IMAGE_NT_HEADERS]
+0x1010190  0x0   Signature:                     0x4550    
+
+----------FILE_HEADER----------
+
+[IMAGE_FILE_HEADER]
+0x1010194  0x0   Machine:                       0x14C     
+0x1010196  0x2   NumberOfSections:              0x0       
+0x1010198  0x4   TimeDateStamp:                 0x0        [Thu Jan  1 00:00:00 1970 UTC]
+0x101019C  0x8   PointerToSymbolTable:          0x0       
+0x10101A0  0xC   NumberOfSymbols:               0x0       
+0x10101A4  0x10  SizeOfOptionalHeader:          0x60      
+0x10101A6  0x12  Characteristics:               0x10F     
+Flags: IMAGE_FILE_32BIT_MACHINE, IMAGE_FILE_EXECUTABLE_IMAGE, IMAGE_FILE_LINE_NUMS_STRIPPED, IMAGE_FILE_LOCAL_SYMS_STRIPPED, IMAGE_FILE_RELOCS_STRIPPED
+
+----------OPTIONAL_HEADER----------
+
+[IMAGE_OPTIONAL_HEADER]
+0x10101A8  0x0   Magic:                         0x10B     
+0x10101AA  0x2   MajorLinkerVersion:            0x0       
+0x10101AB  0x3   MinorLinkerVersion:            0x0       
+0x10101AC  0x4   SizeOfCode:                    0x0       
+0x10101B0  0x8   SizeOfInitializedData:         0x0       
+0x10101B4  0xC   SizeOfUninitializedData:       0x0       
+0x10101B8  0x10  AddressOfEntryPoint:           0x41      
+0x10101BC  0x14  BaseOfCode:                    0x0       
+0x10101C0  0x18  BaseOfData:                    0x0       
+0x10101C4  0x1C  ImageBase:                     0x400000  
+0x10101C8  0x20  SectionAlignment:              0x4       
+0x10101CC  0x24  FileAlignment:                 0x4       
+0x10101D0  0x28  MajorOperatingSystemVersion:   0x0       
+0x10101D2  0x2A  MinorOperatingSystemVersion:   0x0       
+0x10101D4  0x2C  MajorImageVersion:             0x0       
+0x10101D6  0x2E  MinorImageVersion:             0x0       
+0x10101D8  0x30  MajorSubsystemVersion:         0x4       
+0x10101DA  0x32  MinorSubsystemVersion:         0x0       
+0x10101DC  0x34  Reserved1:                     0x0       
+0x10101E0  0x38  SizeOfImage:                   0x1011004 
+0x10101E4  0x3C  SizeOfHeaders:                 0x1011000 
+0x10101E8  0x40  CheckSum:                      0x0       
+0x10101EC  0x44  Subsystem:                     0x3       
+0x10101EE  0x46  DllCharacteristics:            0x0       
+0x10101F0  0x48  SizeOfStackReserve:            0x0       
+0x10101F4  0x4C  SizeOfStackCommit:             0x0       
+0x10101F8  0x50  SizeOfHeapReserve:             0x0       
+0x10101FC  0x54  SizeOfHeapCommit:              0x0       
+0x1010200  0x58  LoaderFlags:                   0x0       
+0x1010204  0x5C  NumberOfRvaAndSizes:           0x0       
+DllCharacteristics: 
+
+----------PE Sections----------
+
+----------Directories----------
+
+

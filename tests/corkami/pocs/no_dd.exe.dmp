@@ -1,0 +1,106 @@
+----------Parsing Warnings----------
+
+Byte 0x00 makes up 73.7305% of the file's contents. This may indicate truncation / malformation.
+
+Suspicious flags set for section 0. Both IMAGE_SCN_MEM_WRITE and IMAGE_SCN_MEM_EXECUTE are set. This might indicate a packed executable.
+
+----------DOS_HEADER----------
+
+[IMAGE_DOS_HEADER]
+0x0        0x0   e_magic:                       0x5A4D    
+0x2        0x2   e_cblp:                        0x0       
+0x4        0x4   e_cp:                          0x0       
+0x6        0x6   e_crlc:                        0x0       
+0x8        0x8   e_cparhdr:                     0x0       
+0xA        0xA   e_minalloc:                    0x0       
+0xC        0xC   e_maxalloc:                    0x0       
+0xE        0xE   e_ss:                          0x0       
+0x10       0x10  e_sp:                          0x0       
+0x12       0x12  e_csum:                        0x0       
+0x14       0x14  e_ip:                          0x0       
+0x16       0x16  e_cs:                          0x0       
+0x18       0x18  e_lfarlc:                      0x0       
+0x1A       0x1A  e_ovno:                        0x0       
+0x1C       0x1C  e_res:                         
+0x24       0x24  e_oemid:                       0x0       
+0x26       0x26  e_oeminfo:                     0x0       
+0x28       0x28  e_res2:                        
+0x3C       0x3C  e_lfanew:                      0x40      
+
+----------NT_HEADERS----------
+
+[IMAGE_NT_HEADERS]
+0x40       0x0   Signature:                     0x4550    
+
+----------FILE_HEADER----------
+
+[IMAGE_FILE_HEADER]
+0x44       0x0   Machine:                       0x14C     
+0x46       0x2   NumberOfSections:              0x1       
+0x48       0x4   TimeDateStamp:                 0x0        [Thu Jan  1 00:00:00 1970 UTC]
+0x4C       0x8   PointerToSymbolTable:          0x0       
+0x50       0xC   NumberOfSymbols:               0x0       
+0x54       0x10  SizeOfOptionalHeader:          0x60      
+0x56       0x12  Characteristics:               0x102     
+Flags: IMAGE_FILE_32BIT_MACHINE, IMAGE_FILE_EXECUTABLE_IMAGE
+
+----------OPTIONAL_HEADER----------
+
+[IMAGE_OPTIONAL_HEADER]
+0x58       0x0   Magic:                         0x10B     
+0x5A       0x2   MajorLinkerVersion:            0x0       
+0x5B       0x3   MinorLinkerVersion:            0x0       
+0x5C       0x4   SizeOfCode:                    0x0       
+0x60       0x8   SizeOfInitializedData:         0x0       
+0x64       0xC   SizeOfUninitializedData:       0x0       
+0x68       0x10  AddressOfEntryPoint:           0x1000    
+0x6C       0x14  BaseOfCode:                    0x0       
+0x70       0x18  BaseOfData:                    0x0       
+0x74       0x1C  ImageBase:                     0xFFFF0000
+0x78       0x20  SectionAlignment:              0x1000    
+0x7C       0x24  FileAlignment:                 0x200     
+0x80       0x28  MajorOperatingSystemVersion:   0x0       
+0x82       0x2A  MinorOperatingSystemVersion:   0x0       
+0x84       0x2C  MajorImageVersion:             0x0       
+0x86       0x2E  MinorImageVersion:             0x0       
+0x88       0x30  MajorSubsystemVersion:         0x4       
+0x8A       0x32  MinorSubsystemVersion:         0x0       
+0x8C       0x34  Reserved1:                     0x0       
+0x90       0x38  SizeOfImage:                   0x2000    
+0x94       0x3C  SizeOfHeaders:                 0xE0      
+0x98       0x40  CheckSum:                      0x0       
+0x9C       0x44  Subsystem:                     0x3       
+0x9E       0x46  DllCharacteristics:            0x0       
+0xA0       0x48  SizeOfStackReserve:            0x0       
+0xA4       0x4C  SizeOfStackCommit:             0x0       
+0xA8       0x50  SizeOfHeapReserve:             0x0       
+0xAC       0x54  SizeOfHeapCommit:              0x0       
+0xB0       0x58  LoaderFlags:                   0x0       
+0xB4       0x5C  NumberOfRvaAndSizes:           0x0       
+DllCharacteristics: 
+
+----------PE Sections----------
+
+[IMAGE_SECTION_HEADER]
+0xB8       0x0   Name:                          
+0xC0       0x8   Misc:                          0x1000    
+0xC0       0x8   Misc_PhysicalAddress:          0x1000    
+0xC0       0x8   Misc_VirtualSize:              0x1000    
+0xC4       0xC   VirtualAddress:                0x1000    
+0xC8       0x10  SizeOfRawData:                 0x200     
+0xCC       0x14  PointerToRawData:              0x200     
+0xD0       0x18  PointerToRelocations:          0x0       
+0xD4       0x1C  PointerToLinenumbers:          0x0       
+0xD8       0x20  NumberOfRelocations:           0x0       
+0xDA       0x22  NumberOfLinenumbers:           0x0       
+0xDC       0x24  Characteristics:               0xA0000000
+Flags: IMAGE_SCN_MEM_EXECUTE, IMAGE_SCN_MEM_WRITE
+Entropy: 3.856986 (Min=0.0, Max=8.0)
+MD5     hash: 6c24af7dc4094ce20561b7d0f121a729
+SHA-1   hash: 4167ecce093618f69ae64cece26a5581d3069c41
+SHA-256 hash: ac5c2cb5b0dc04cad5e7d3596f4b5cc4c08d45556a87df2976757b1c9cc45386
+SHA-512 hash: 52e8e276e642a128beab47be1ca2bd242106b56d36f614cb48e65a5e34421b2da943d47aa40a951e21ff1067875789b577658033e2a7745b8ff575a858cd25de
+
+----------Directories----------
+
+
