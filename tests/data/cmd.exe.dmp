@@ -282,9 +282,9 @@ SHA-512 hash: a6f51898840514d52147d907090003dd48731fc1f9b75a17c16f65b20706704f4b
     FileDescription: Windows Command Processor
     FileVersion: 6.1.7601.17514 (win7sp1_rtm.101119-1850)
     InternalName: cmd
-    LegalCopyright: \xc2\xa9 Microsoft Corporation. All rights reserved.
+    LegalCopyright: © Microsoft Corporation. All rights reserved.
     OriginalFilename: Cmd.Exe
-    ProductName: Microsoft\xc2\xae Windows\xc2\xae Operating System
+    ProductName: Microsoft® Windows® Operating System
     ProductVersion: 6.1.7601.17514
 
 [VarFileInfo]

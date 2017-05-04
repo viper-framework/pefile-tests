@@ -264,8 +264,8 @@ SHA-512 hash: 323e60f3eee79ec504f458d247f81030aeb3f0796e48577ed2caf61cdd4ec52e5b
     FileDescription: Visual Basic Virtual Machine
     FileVersion: 6.00.9802
     InternalName: MSVBVM60.DLL
-    LegalCopyright: Copyright \xc2\xa9 1987-2000 Microsoft Corp.
-    LegalTrademarks: Microsoft\xc2\xae is a registered trademark of Microsoft Corporation. Windows(TM) is a trademark of Microsoft Corporation
+    LegalCopyright: Copyright © 1987-2000 Microsoft Corp.
+    LegalTrademarks: Microsoft® is a registered trademark of Microsoft Corporation. Windows(TM) is a trademark of Microsoft Corporation
     OLESelfRegister: 
     ProductName: Visual Basic
     ProductVersion: 6.00.9802
@@ -2686,11 +2686,11 @@ DLL: OLEAUT32.dll
             0x111EA0   0x8   CodePage:                      0x0       
             0x111EA4   0xC   Reserved:                      0x0       
           [STRINGS]
-              1464: The DataFormat property is not supported for this DataSource.
               1460: Invalid Clipboard format
               1461: Specified format doesn't match format of data
               1462: No compatible data source was found for this control.  Please add an intrinsic Data Control or a Remote Data Control to the form.
               1463: No compatible data source was found for this control.  Please add an OLEDB data source such as the Data Environment or Microsoft ADO Data Control to the form or project.
+              1464: The DataFormat property is not supported for this DataSource.
       Id: [0x5D]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x111200   0x0   Name:                          0x5D      
@@ -3464,11 +3464,11 @@ DLL: OLEAUT32.dll
             0x112040   0x8   CodePage:                      0x0       
             0x112044   0xC   Reserved:                      0x0       
           [STRINGS]
+             13222: (None)\x7fCtrl+A\x7fCtrl+B\x7fCtrl+C\x7fCtrl+D\x7fCtrl+E\x7fCtrl+F\x7fCtrl+G\x7fCtrl+H\x7fCtrl+I\x7fCtrl+J\x7fCtrl+K\x7fCtrl+L\x7fCtrl+M\x7fCtrl+N\x7fCtrl+O\x7fCtrl+P\x7fCtrl+Q\x7fCtrl+R\x7fCtrl+S\x7fCtrl+T\x7f^^
+             13223: Ctrl+U\x7fCtrl+V\x7fCtrl+W\x7fCtrl+X\x7fCtrl+Y\x7fCtrl+Z\x7fF1\x7fF2\x7fF3\x7fF4\x7fF5\x7fF6\x7fF7\x7fF8\x7fF9\x7fF11\x7fF12\x7fCtrl+F1\x7fCtrl+F2\x7fCtrl+F3\x7fCtrl+F4\x7fCtrl+F5\x7fCtrl+F6\x7fCtrl+F7\x7fCtrl+F8\x7f^^
              13224: Ctrl+F9\x7fCtrl+F11\x7fCtrl+F12\x7fShift+F1\x7fShift+F2\x7fShift+F3\x7fShift+F4\x7fShift+F5\x7fShift+F6\x7fShift+F7\x7fShift+F8\x7fShift+F9\x7fShift+F11\x7fShift+F12\x7fShift+Ctrl+F1\x7f^^
              13225: Shift+Ctrl+F2\x7fShift+Ctrl+F3\x7fShift+Ctrl+F4\x7fShift+Ctrl+F5\x7fShift+Ctrl+F6\x7fShift+Ctrl+F7\x7fShift+Ctrl+F8\x7f^^
              13226: Shift+Ctrl+F9\x7fShift+Ctrl+F11\x7fShift+Ctrl+F12\x7fCtrl+Ins\x7fShift+Ins\x7fDel\x7fShift+Del\x7fAlt+Bksp\x7f
-             13222: (None)\x7fCtrl+A\x7fCtrl+B\x7fCtrl+C\x7fCtrl+D\x7fCtrl+E\x7fCtrl+F\x7fCtrl+G\x7fCtrl+H\x7fCtrl+I\x7fCtrl+J\x7fCtrl+K\x7fCtrl+L\x7fCtrl+M\x7fCtrl+N\x7fCtrl+O\x7fCtrl+P\x7fCtrl+Q\x7fCtrl+R\x7fCtrl+S\x7fCtrl+T\x7f^^
-             13223: Ctrl+U\x7fCtrl+V\x7fCtrl+W\x7fCtrl+X\x7fCtrl+Y\x7fCtrl+Z\x7fF1\x7fF2\x7fF3\x7fF4\x7fF5\x7fF6\x7fF7\x7fF8\x7fF9\x7fF11\x7fF12\x7fCtrl+F1\x7fCtrl+F2\x7fCtrl+F3\x7fCtrl+F4\x7fCtrl+F5\x7fCtrl+F6\x7fCtrl+F7\x7fCtrl+F8\x7f^^
       Id: [0x33C]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x1112D0   0x0   Name:                          0x33C     

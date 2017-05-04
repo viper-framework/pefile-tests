@@ -1,8 +1,8 @@
 ----------Parsing Warnings----------
 
-Byte 0x00 makes up 56.8359% of the file's contents. This may indicate truncation / malformation.
-
 Byte 0xff makes up 28.6133% of the file's contents. This may indicate truncation / malformation.
+
+Byte 0x00 makes up 56.8359% of the file's contents. This may indicate truncation / malformation.
 
 Suspicious NumberOfRvaAndSizes in the Optional Header. Normal values are never larger than 0x10, the value is: 0xffffffff
 

@@ -303,8 +303,8 @@ SHA-512 hash: d0e2f3ccbef25c57618a043f1599563af2cd40b6b8dabad9b0d494ec1b1a0e4f36
     FileDescription: GetText: library and tools for native language support
     FileVersion: 0.14.4.1952
     InternalName: libintl3
-    LegalCopyright: \xc2\xa9 2005 Free Software Foundation <www.fsf.org>
-    LegalTrademarks: GNU\xc2\xae, GetText\xc2\xae, libintl3\xc2\xae
+    LegalCopyright: © 2005 Free Software Foundation <www.fsf.org>
+    LegalTrademarks: GNU®, GetText®, libintl3®
     LibToolFileVersion: 7:0:4
     License: This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License;see www.gnu.org/copyleft/gpl.html.
     OriginalFilename: libintl3.dll

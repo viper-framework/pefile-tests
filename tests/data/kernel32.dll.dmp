@@ -243,9 +243,9 @@ SHA-512 hash: fcbcc021dc6c84e3265e739f8af4daadbc87dfa923eef0eee6bd3bc72bcfe7d578
     FileDescription: Windows NT BASE API Client DLL
     FileVersion: 5.1.2600.5781 (xpsp_sp3_gdr.090321-1317)
     InternalName: kernel32
-    LegalCopyright: \xc2\xa9 Microsoft Corporation. All rights reserved.
+    LegalCopyright: © Microsoft Corporation. All rights reserved.
     OriginalFilename: kernel32
-    ProductName: Microsoft\xc2\xae Windows\xc2\xae Operating System
+    ProductName: Microsoft® Windows® Operating System
     ProductVersion: 5.1.2600.5781
 
 [VarFileInfo]
@@ -2589,8 +2589,8 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86B40    0x8   CodePage:                      0x0       
             0x86B44    0xC   Reserved:                      0x0       
           [STRINGS]
-               936: $$$936   (ANSI/OEM - Simplified Chinese GBK)
                932: $$$932   (ANSI/OEM - Japanese Shift-JIS)
+               936: $$$936   (ANSI/OEM - Simplified Chinese GBK)
       Id: [0x3C]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85D30    0x0   Name:                          0x3C      
@@ -2804,9 +2804,9 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86BB4    0xC   Reserved:                      0x0       
           [STRINGS]
               1104: Mongolian (Cyrillic)$Mongolia
-              1114: Syriac$Syria
               1110: Galician$Spain
               1111: Konkani$India
+              1114: Syriac$Syria
       Id: [0x47]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85D68    0x0   Name:                          0x47      
@@ -3157,9 +3157,9 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86C94    0xC   Reserved:                      0x0       
           [STRINGS]
               6145: Arabic (Morocco)$Morocco
+              6153: English (Ireland)$Ireland
               6154: Spanish (Panama)$Panama
               6156: French (Monaco)$Principality of Monaco
-              6153: English (Ireland)$Ireland
       Id: [0x1C1]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85DD8    0x0   Name:                          0x1C1     
@@ -3182,8 +3182,8 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86CA4    0xC   Reserved:                      0x0       
           [STRINGS]
               7169: Arabic (Tunisia)$Tunisia
-              7178: Spanish (Dominican Republic)$Dominican Republic
               7177: English (South Africa)$South Africa
+              7178: Spanish (Dominican Republic)$Dominican Republic
       Id: [0x201]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85DE0    0x0   Name:                          0x201     
@@ -3206,8 +3206,8 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86CB4    0xC   Reserved:                      0x0       
           [STRINGS]
               8193: Arabic (Oman)$Oman
-              8202: Spanish (Venezuela)$Venezuela
               8201: English (Jamaica)$Jamaica
+              8202: Spanish (Venezuela)$Venezuela
       Id: [0x241]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85DE8    0x0   Name:                          0x241     
@@ -3230,8 +3230,8 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86CC4    0xC   Reserved:                      0x0       
           [STRINGS]
               9217: Arabic (Yemen)$Yemen
-              9226: Spanish (Colombia)$Colombia
               9225: English (Caribbean)$Caribbean
+              9226: Spanish (Colombia)$Colombia
       Id: [0x272]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85DF0    0x0   Name:                          0x272     
@@ -3354,8 +3354,8 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86D14    0xC   Reserved:                      0x0       
           [STRINGS]
              10241: Arabic (Syria)$Syria
-             10250: Spanish (Peru)$Peru
              10249: English (Belize)$Belize
+             10250: Spanish (Peru)$Peru
       Id: [0x2C1]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85E18    0x0   Name:                          0x2C1     
@@ -3378,8 +3378,8 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86D24    0xC   Reserved:                      0x0       
           [STRINGS]
              11265: Arabic (Jordan)$Jordan
-             11274: Spanish (Argentina)$Argentina
              11273: English (Trinidad)$Trinidad and Tobago
+             11274: Spanish (Argentina)$Argentina
       Id: [0x301]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85E20    0x0   Name:                          0x301     
@@ -3402,8 +3402,8 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86D34    0xC   Reserved:                      0x0       
           [STRINGS]
              12289: Arabic (Lebanon)$Lebanon
-             12298: Spanish (Ecuador)$Ecuador
              12297: English (Zimbabwe)$Zimbabwe
+             12298: Spanish (Ecuador)$Ecuador
       Id: [0x341]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85E28    0x0   Name:                          0x341     
@@ -3426,8 +3426,8 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86D44    0xC   Reserved:                      0x0       
           [STRINGS]
              13313: Arabic (Kuwait)$Kuwait
-             13322: Spanish (Chile)$Chile
              13321: English (Philippines)$Republic of the Philippines
+             13322: Spanish (Chile)$Chile
       Id: [0x381]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85E30    0x0   Name:                          0x381     
@@ -3752,8 +3752,8 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86E20    0x8   CodePage:                      0x0       
             0x86E24    0xC   Reserved:                      0x0       
           [STRINGS]
-             20297: $$$20297 (IBM EBCDIC - France)
              20290: $$$20290 (IBM EBCDIC - Japanese Katakana Extended)
+             20297: $$$20297 (IBM EBCDIC - France)
       Id: [0x4FD]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85EA0    0x0   Name:                          0x4FD     
@@ -3775,9 +3775,9 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86E30    0x8   CodePage:                      0x0       
             0x86E34    0xC   Reserved:                      0x0       
           [STRINGS]
-             20424: $$$20424 (IBM EBCDIC - Hebrew)
              20420: $$$20420 (IBM EBCDIC - Arabic)
              20423: $$$20423 (IBM EBCDIC - Greek)
+             20424: $$$20424 (IBM EBCDIC - Hebrew)
       Id: [0x501]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85EA8    0x0   Name:                          0x501     
@@ -3933,8 +3933,8 @@ ntdll.dll.RtlUnwind Hint[851]
             0x86EA0    0x8   CodePage:                      0x0       
             0x86EA4    0xC   Reserved:                      0x0       
           [STRINGS]
-             20936: $$$20936 (Simplified Chinese GB2312)
              20932: $$$20932 (JIS X 0208-1990 & 0212-1990)
+             20936: $$$20936 (Simplified Chinese GB2312)
       Id: [0x523]
       [IMAGE_RESOURCE_DIRECTORY_ENTRY]
       0x85EE0    0x0   Name:                          0x523     

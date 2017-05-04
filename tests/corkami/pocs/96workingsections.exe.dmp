@@ -1,12 +1,12 @@
 ----------Parsing Warnings----------
 
-Byte 0x48 makes up 22.2675% of the file's contents. This may indicate truncation / malformation.
-
 Byte 0xc0 makes up 22.2786% of the file's contents. This may indicate truncation / malformation.
 
-Byte 0xeb makes up 22.4423% of the file's contents. This may indicate truncation / malformation.
+Byte 0x48 makes up 22.2675% of the file's contents. This may indicate truncation / malformation.
 
 Byte 0xff makes up 22.6228% of the file's contents. This may indicate truncation / malformation.
+
+Byte 0xeb makes up 22.4423% of the file's contents. This may indicate truncation / malformation.
 
 Suspicious flags set for section 0. Both IMAGE_SCN_MEM_WRITE and IMAGE_SCN_MEM_EXECUTE are set. This might indicate a packed executable.
 

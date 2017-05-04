@@ -303,8 +303,8 @@ SHA-512 hash: b5b393a121529fa5d11ab39a8daed2b1327e5ba7aac6830b498cf02afbe31ce082
     FileDescription: Tre4: Posix compliant regular expression library
     FileVersion: 0.7.5.3276
     InternalName: tre4
-    LegalCopyright: \xc2\xa9 2008 Ville Laurikari <vl@iki.fi>
-    LegalTrademarks: GnuWin32\xc2\xae, Tre\xc2\xae, tre4\xc2\xae
+    LegalCopyright: © 2008 Ville Laurikari <vl@iki.fi>
+    LegalTrademarks: GnuWin32®, Tre®, tre4®
     LibToolFileVersion: 6:4:2
     License: This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License; see www.gnu.org/copyleft/gpl.html. 
     OriginalFilename: tre4.dll

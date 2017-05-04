@@ -303,8 +303,8 @@ SHA-512 hash: 086b62d039decc86819d4c09fe8d3cdf2416207b20bc67495e2ca8107888138120
     FileDescription: LibIconv: convert between character encodings
     FileVersion: 1.9.2.1519
     InternalName: libiconv2
-    LegalCopyright: \xc2\xa9 2004 Free Software Foundation <www.fsf.org>
-    LegalTrademarks: GNU\xc2\xae, LibIconv\xc2\xae, libiconv2\xc2\xae
+    LegalCopyright: © 2004 Free Software Foundation <www.fsf.org>
+    LegalTrademarks: GNU®, LibIconv®, libiconv2®
     LibToolFileVersion: 4:0:2
     License: This program is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License;see www.gnu.org/copyleft/lesser.html.
     OriginalFilename: libiconv2.dll
