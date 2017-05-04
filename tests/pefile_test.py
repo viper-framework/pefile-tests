@@ -70,6 +70,7 @@ class Test_pefile(unittest.TestCase):
             try:
                 pe = pefile.PE(pe_filename)
                 pe_file_data = pe.dump_info()
+                pe.dump_dict()
                 pe_file_data = pe_file_data.replace('\n\r', '\n')
             except Exception as excp:
                 print('Failed processing [%s]' % os.path.basename(pe_filename))
