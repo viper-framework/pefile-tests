@@ -82,8 +82,8 @@ class Test_pefile(unittest.TestCase):
                     'Could not find control data file [%s]. '
                     'Assuming first run and generating...') % (
                     os.path.basename(control_data_filename)))
-                control_data_f = open(control_data_filename, 'wb')
-                control_data_f.write(pe_file_data.encode('utf-8', 'backslashreplace'))
+                with open(control_data_filename, 'wb') as control_data_f:
+                    control_data_f.write(pe_file_data.encode('utf-8', 'backslashreplace'))
                 continue
 
             with open(control_data_filename, 'rb') as control_data_f:
@@ -101,7 +101,6 @@ class Test_pefile(unittest.TestCase):
 
                 diff = difflib.ndiff(
                     control_data.decode('utf-8').splitlines(), pe_file_data.splitlines())
-
                 # check the diff
                 for line in diff:
                     # Count all changed lines
@@ -119,7 +118,6 @@ class Test_pefile(unittest.TestCase):
                         # identical ones are good.
                         if 'TimeDateStamp' in line:
                             lines_to_ignore += 1
-
 
                 if (diff_lines_removed_count == diff_lines_added_count and
                     lines_to_ignore ==
