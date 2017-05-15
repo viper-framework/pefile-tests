@@ -29,6 +29,8 @@ from builtins import range
 import difflib
 from hashlib import sha256
 import os
+import sys
+import codecs
 import unittest
 
 import pefile
@@ -36,6 +38,21 @@ import pefile
 
 REGRESSION_TESTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 POCS_TESTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corkami/pocs')
+
+
+if sys.version_info < (3, 5):
+
+    def backslashreplace(ex):
+        # The error handler receives the UnicodeDecodeError, which contains arguments of the
+        # string and start/end indexes of the bad portion.
+        bstr, start, end = ex.args[1:4]
+
+        # The return value is a tuple of Unicode string and the index to continue conversion.
+        # Note: iterating byte strings returns int on 3.x but str on 2.x
+        return u''.join('\\x{:02x}'.format(c if isinstance(c, int) else ord(c))
+                        for c in bstr[start:end]), end
+
+    codecs.register_error('backslashreplace', backslashreplace)
 
 
 class Test_pefile(unittest.TestCase):
@@ -62,7 +79,6 @@ class Test_pefile(unittest.TestCase):
 
     def test_pe_image_regression_test(self):
         """Run through all the test files and make sure they run correctly"""
-
         for idx, pe_filename in enumerate(self.test_files):
             if pe_filename.endswith('empty_file'):
                 continue
@@ -227,11 +243,9 @@ class Test_pefile(unittest.TestCase):
                 # shorter string, into the space occupied by a longer one.
                 if new_data[idx] != 0:
                     differences.append(chr(new_data[idx]))
-
         # Verify all modifications in the file were the ones we just made
         #
         self.assertEqual(''.join(differences).encode('utf-8', 'backslashreplace'), str1 + str2 + str3)
-
         pe.close()
 
     def test_nt_headers_exception(self):
@@ -283,7 +297,6 @@ class Test_pefile(unittest.TestCase):
 
     def test_relocated_memory_mapped_image(self):
         """Test different rebasing methods produce the same image"""
-
         # Take a known good file
         control_file = os.path.join(REGRESSION_TESTS_DIR, 'MSVBVM60.DLL')
         pe = pefile.PE(control_file)
