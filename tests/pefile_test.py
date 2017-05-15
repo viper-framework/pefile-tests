@@ -212,9 +212,9 @@ class Test_pefile(unittest.TestCase):
         str2 = b'str2'
         str3 = b'string3'
 
-        pe.FileInfo[0].StringTable[0].entries[b'FileDescription'] = str1
-        pe.FileInfo[0].StringTable[0].entries[b'FileVersion'] = str2
-        pe.FileInfo[0].StringTable[0].entries[b'InternalName'] = str3
+        pe.FileInfo[0].StringTable[0].entries['FileDescription'] = str1
+        pe.FileInfo[0].StringTable[0].entries['FileVersion'] = str2
+        pe.FileInfo[0].StringTable[0].entries['InternalName'] = str3
 
         new_data = pe.write()
 
