@@ -29,8 +29,6 @@ from builtins import range
 import difflib
 from hashlib import sha256
 import os
-import sys
-import codecs
 import unittest
 
 import pefile
@@ -38,21 +36,6 @@ import pefile
 
 REGRESSION_TESTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 POCS_TESTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corkami/pocs')
-
-
-if sys.version_info < (3, 5):
-
-    def backslashreplace(ex):
-        # The error handler receives the UnicodeDecodeError, which contains arguments of the
-        # string and start/end indexes of the bad portion.
-        bstr, start, end = ex.args[1:4]
-
-        # The return value is a tuple of Unicode string and the index to continue conversion.
-        # Note: iterating byte strings returns int on 3.x but str on 2.x
-        return u''.join('\\x{:02x}'.format(c if isinstance(c, int) else ord(c))
-                        for c in bstr[start:end]), end
-
-    codecs.register_error('backslashreplace', backslashreplace)
 
 
 class Test_pefile(unittest.TestCase):
@@ -139,16 +122,11 @@ class Test_pefile(unittest.TestCase):
                 if (diff_lines_removed_count == diff_lines_added_count and
                     lines_to_ignore ==
                         diff_lines_removed_count + diff_lines_added_count):
-                    print (
-                        'Differences are in TimeDateStamp formatting, '
-                        'ignoring...')
+                    print('Differences are in TimeDateStamp formatting, ignoring...')
 
                 else:
-                    print (
-                        'Lines added: %d, lines removed: %d, lines with '
-                        'TimeDateStamp: %d' % (
-                        diff_lines_added_count, diff_lines_removed_count,
-                        lines_to_ignore))
+                    print('Lines added: %d, lines removed: %d, lines with TimeDateStamp: %d' % (
+                        diff_lines_added_count, diff_lines_removed_count, lines_to_ignore))
 
                     # Do the diff again to store it for analysis.
                     diff = difflib.unified_diff(
@@ -173,7 +151,6 @@ class Test_pefile(unittest.TestCase):
 
             os.sys.stdout.write('[%d]' % (len(self.test_files) - idx))
             os.sys.stdout.flush()
-
 
     def test_selective_loading_integrity(self):
         """Verify integrity of loading the separate elements of the file as
@@ -261,7 +238,6 @@ class Test_pefile(unittest.TestCase):
 
         self.assertRaises(pefile.PEFormatError, pefile.PE, data=corrupted_data)
 
-
     def test_dos_header_exception_large_data(self):
         """pefile should fail parsing 10KiB of invalid data
         (missing DOS header).
@@ -274,7 +250,6 @@ class Test_pefile(unittest.TestCase):
         # is thrown.
         self.assertRaises(pefile.PEFormatError, pefile.PE, data=data)
 
-
     def test_dos_header_exception_small_data(self):
         """pefile should fail parsing 64 bytes of invalid data
         (missing DOS header).
@@ -286,7 +261,6 @@ class Test_pefile(unittest.TestCase):
         # Attempt to parse data and verify PE header a PEFormatError exception
         # is thrown.
         self.assertRaises(pefile.PEFormatError, pefile.PE, data=data)
-
 
     def test_empty_file_exception(self):
         """pefile should fail parsing empty files."""
@@ -312,7 +286,7 @@ class Test_pefile(unittest.TestCase):
         rebased_image_1 = pe.get_memory_mapped_image(ImageBase=0x1000000)
 
         differences_1 = count_differences(original_image_1, rebased_image_1)
-        self.assertEqual(differences_1,  61136)
+        self.assertEqual(differences_1, 61136)
 
         original_image_2 = pe.get_memory_mapped_image()
         pe.relocate_image(0x1000000)
