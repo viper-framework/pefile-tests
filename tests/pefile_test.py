@@ -30,6 +30,7 @@ import difflib
 from hashlib import sha256
 import os
 import unittest
+from io import open
 
 import pefile
 
@@ -131,14 +132,13 @@ class Test_pefile(unittest.TestCase):
                     # Do the diff again to store it for analysis.
                     diff = difflib.unified_diff(
                         control_data.decode('utf-8').splitlines(), pe_file_data.splitlines())
-                    error_diff_f = open('error_diff.txt', 'ab')
-                    error_diff_f.write(
-                        b'\n________________________________________\n')
-                    error_diff_f.write(
-                        'Errors for file "{0}":\n'.format(pe_filename).encode('utf-8', 'backslashreplace'))
-                    error_diff_f.write(
-                        '\n'.join([l for l in diff if not l.startswith(' ')]).encode('utf-8', 'backslashreplace'))
-                    error_diff_f.close()
+                    with open('error_diff.txt', 'ab') as error_diff_f:
+                        error_diff_f.write(
+                            b'\n________________________________________\n')
+                        error_diff_f.write(
+                            'Errors for file "{0}":\n'.format(pe_filename).encode('utf-8', 'backslashreplace'))
+                        error_diff_f.write(
+                            '\n'.join([l for l in diff if not l.startswith(' ')]).encode('utf-8', 'backslashreplace'))
                     print('Diff saved to: error_diff.txt')
 
             if diff_lines_removed_count == 0:
